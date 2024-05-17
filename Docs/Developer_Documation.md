@@ -23,6 +23,8 @@ WaterIt3D is a minimalist sandbox game where players can manipulate terrain by p
 ## Game Mechanics:
 ### Grid System:
 The game world is represented as a grid, with each tile representing a specific piece of land. Players can interact with the grid by placing grass and tree machines on individual tiles.
+**Flowchart of the game loop**
+![Flowchart](../Assets/Flowchart.png)
 
 ### Grass Machine:
 Grass machines are used to cover barren land with grass. Players can place grass machines on empty tiles to initiate grass growth. Once placed, grass machines gradually spread grass to adjacent tiles over time. Grass machines have three modes:
@@ -80,8 +82,4 @@ The game loop in WaterIt3D follows a simple structure:
   **A:** WaterIt3D is an open-ended sandbox experience without a specific win condition. Enjoy creating and restoring the environment at your own pace.
 
 ## System Architecture:
-graph TD;
-    Game-->InputManager;
-    InputManager-->GameLogicEventProcessing;
-    GameLogicEventProcessing-->Renderer;
-    GameLogicEventProcessing-->AudioManager;
+![System architecture and class diagram](../Assets/Archetectureimg.png)
