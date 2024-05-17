@@ -80,41 +80,41 @@ The game loop in WaterIt3D follows a simple structure:
   **A:** WaterIt3D is an open-ended sandbox experience without a specific win condition. Enjoy creating and restoring the environment at your own pace.
 
 ## System Architecture:
-                  +----------------------+
-                  |                      |
-                  |        Game          |
-                  |                      |
-                  +----------+-----------+
-                             |
-                             | Input Events
-                             v
-                  +----------+-----------+
-                  |                      |
-                  |   Input Manager      |
-                  |                      |
-                  +----------+-----------+
-                             |
-                             | Game State Updates
-                             v
-           +-----------------+------------------+
-           |                                    |
-           |       Game Logic and               |
-           |       Event Processing             |
-           |                                    |
-           +-----------------+------------------+
-                             |
-                             | Rendering
-                             v
-                  +----------+-----------+
-                  |                      |
-                  |   Renderer           |
-                  |                      |
-                  +----------+-----------+
-                             |
-                             | Audio Output
-                             v
-                  +----------+-----------+
-                  |                      |
-                  |   Audio Manager      |
-                  |                      |
-                  +----------+-----------+
++----------------------+
+|                      |
+|        Game          |
+|                      |
++----------+-----------+
+           |
+           | Input Events
+           v
++----------+-----------+
+|                      |
+|   Input Manager      |
+|                      |
++----------+-----------+
+           |
+           | Game State Updates
+           v
++-----------------+------------------+
+|                                    |
+|       Game Logic and               |
+|       Event Processing             |
+|                                    |
++-----------------+------------------+
+           |
+           | Rendering
+           v
++----------+-----------+
+|                      |
+|   Renderer           |
+|                      |
++----------+-----------+
+           |
+           | Audio Output
+           v
++----------+-----------+
+|                      |
+|   Audio Manager      |
+|                      |
++----------+-----------+
